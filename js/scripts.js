@@ -20,8 +20,10 @@ $(document).ready(function(){
             }
 
         if (campus === "Seattle") {
+            $("#campus-link").attr("href", "https://www.epicodus.com/seattle/");
             address = "600 1st Ave, Seattle, WA "
         } else if (campus === "Portland") {
+            $("#campus-link").attr("href", "https://www.epicodus.com/portland/");
             address = "400 SW 6th Ave, Portland, OR "
         }
 
