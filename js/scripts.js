@@ -9,10 +9,29 @@ $(document).ready(function(){
         var side = $("select#side").val();
         var company = $("input:radio[name=company]:checked").val();
         var build = $("input:radio[name=build]:checked").val();
+        
+        var suggest1;
+        var suggest2;
+        var suggest3;
 
-        console.log(build);
+        if(company === "bigger"){
+            suggest1 = "C#/.NET"
+        } else if (company === "fast-paced"){
+            suggest1 = "PHP/Drupal"
+        } else if (company === "enterprise") {
+            suggest1 = "Java/Android"
+        } else if (company === "start-up") {
+            suggest1 = "Ruby/Rails"
+        }
 
+        if(build === "")
+        
+        console.log(company);
+
+        $("div#output").hide();
         $("span#nameOutput").text(name);
+        $("span#suggest1").text(suggest1);
+        $("div#output").fadeIn(2000);
         
     })
 })

@@ -17,3 +17,7 @@ form {
 #output {
     display:none;
 }
+
+#suggest1, #suggest2, #suggest3 {
+    color: #00b3b4;
+}
