@@ -21,9 +21,11 @@ $(document).ready(function(){
 
         if (campus === "Seattle") {
             $("#campus-link").attr("href", "https://www.epicodus.com/seattle/");
+            $("#campus-map").attr("href", "https://www.google.com/maps/place/600+1st+Ave,+Seattle,+WA+98104/");
             address = "600 1st Ave, Seattle, WA "
         } else if (campus === "Portland") {
             $("#campus-link").attr("href", "https://www.epicodus.com/portland/");
+            $("#campus-map").attr("href", "https://www.google.com/maps/place/400+SW+Sixth+Avenue,+400+SW+6th+Ave,+Portland,+OR+97204/")
             address = "400 SW 6th Ave, Portland, OR "
         }
 
