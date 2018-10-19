@@ -17,7 +17,7 @@ _ A simple web app, that provides suggestions based on user input_
 
 ## Known Bugs
 
-No known bugs 
+audio file will not play on gh-pages demo
 
 ## Support and contact details
 
