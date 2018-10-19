@@ -11,6 +11,86 @@
     <script src="js/scripts.js"></script>
 </head>
 <body>
-    
+    <h1>Epicodus Track Suggester</h1>
+    <div class="container">
+    <form id="form">
+        <h3>Please fill out the information below</h3>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input id="name" type="text">
+        </div>
+        <div class="form-group">
+                <label for="location">Location:</label>
+                <select id="location" class="form-control" name="location">
+                    <option value="1">Seattle</option>
+                    <option value="2">Portland</option>
+                </select>
+        </div>
+        <div class="form-group">
+                <label for="side">Front-End or Back-End: </label>
+                <select id="side" class="form-control" name="side">
+                    <option value="1">Front-End(Client Side)</option>
+                    <option value="2">Back-End(Server Side)</option>
+                </select>
+        </div>
+        <div class="form-group">
+                <p>You would like to work for: </p>
+                
+                    <div class="radio">
+                    <label>
+                    <input type="radio" name="genre" value="bigger" checked>
+                        Bigger established companies
+                    </label>
+                    </div>
+                    <div class="radio">
+                    <label>
+                        <input type="radio" name="genre" value="fast-paced">
+                        Fast-paced agencies
+                    </label>
+                    </div>
+                    <div class="radio">
+                    <label>
+                        <input type="radio" name="genre" value="enterprise">
+                        Enterprise companies
+                    </label>
+                    </div>        
+                    <div class="radio">
+                    <label>
+                        <input type="radio" name="genre" value="start-up">
+                       Start-ups, smaller companies
+                    </label>
+                    </div> 
+            </div>
+
+        <div class="form-group">
+                <p>You would like to build: </p>
+                
+                    <div class="radio">
+                    <label>
+                    <input type="radio" name="genre" value="internal" checked>
+                        Internal business software
+                    </label>
+                    </div>
+                    <div class="radio">
+                    <label>
+                        <input type="radio" name="genre" value="dynamic">
+                        Dynamic web apps, server-side
+                    </label>
+                    </div>
+                    <div class="radio">
+                    <label>
+                        <input type="radio" name="genre" value="android">
+                        Android apps
+                    </label>
+                    </div>        
+                    <div class="radio">
+                    <label>
+                        <input type="radio" name="genre" value="interactive">
+                      Interactive web apps
+                    </label>
+                    </div> 
+        </div>
+    </form>
+</div>
 </body>
 </html>
