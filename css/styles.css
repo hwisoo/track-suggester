@@ -5,3 +5,15 @@ img {
 h1 {
     margin-bottom: 50px;
 }
+
+select {
+    max-width: 200px;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+#output {
+    display:none;
+}

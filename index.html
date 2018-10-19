@@ -19,44 +19,46 @@
             <label for="name">Name:</label><br>
             <input id="name" type="text">
         </div>
-        <div class="form-group">
-            <label for="location">Location:</label>
-            <select id="location" class="form-control" name="location">
-                <option value="1">Seattle</option>
-                <option value="2">Portland</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="side">Front-End or Back-End: </label>
-            <select id="side" class="form-control" name="side">
-                <option value="1">Front-End(Client Side)</option>
-                <option value="2">Back-End(Server Side)</option>
-            </select>
+        <div class="row">
+            <div class="form-group col col-md-3">
+                <label for="campus">Select campus:</label>
+                <select id="campus" class="form-control" name="campus">
+                    <option value="seattle">Seattle</option>
+                    <option value="portland">Portland</option>
+                </select>
+            </div>
+            <div class="form-group col col-md-3">
+                <label for="side">You prefer Front-End or Back-End: </label>
+                <select id="side" class="form-control" name="side">
+                    <option value="front">Front-End(Client Side)</option>
+                    <option value="back">Back-End(Server Side)</option>
+                </select>
+            </div>
         </div>
         <div class="row">
             <div class="form-group col col-md-3">
                 <p>You would like to work for: </p>
                 <div class="radio">
                 <label>
-                <input type="radio" name="genre" value="bigger" checked>
+                <input type="radio" name="company" value="bigger" checked>
                     Bigger established companies
                 </label>
                 </div>
                 <div class="radio">
                 <label>
-                    <input type="radio" name="genre" value="fast-paced">
+                    <input type="radio" name="company" value="fast-paced">
                     Fast-paced agencies
                 </label>
                 </div>
                 <div class="radio">
                 <label>
-                    <input type="radio" name="genre" value="enterprise">
+                    <input type="radio" name="company" value="enterprise">
                     Enterprise companies
                 </label>
                 </div>        
                 <div class="radio">
                 <label>
-                    <input type="radio" name="genre" value="start-up">
+                    <input type="radio" name="company" value="start-up">
                     Start-ups, smaller companies
                 </label>
                 </div> 
@@ -67,25 +69,25 @@
             
                 <div class="radio">
                 <label>
-                <input type="radio" name="genre" value="internal" checked>
+                <input type="radio" name="build" value="internal" checked>
                     Internal business software
                 </label>
                 </div>
                 <div class="radio">
                 <label>
-                    <input type="radio" name="genre" value="dynamic">
+                    <input type="radio" name="build" value="dynamic">
                     Dynamic web apps, server-side
                 </label>
                 </div>
                 <div class="radio">
                 <label>
-                    <input type="radio" name="genre" value="android">
+                    <input type="radio" name="build" value="android">
                     Android apps
                 </label>
                 </div>        
                 <div class="radio">
                 <label>
-                    <input type="radio" name="genre" value="interactive">
+                    <input type="radio" name="build" value="interactive">
                     Interactive web apps
                 </label>
                 </div> 
@@ -93,6 +95,10 @@
         </div>
         <button type="submit" class="btn btn-dark">Submit</button>
     </form>
+
+    <div id="output">
+        <h4><span id="nameOutput"></span>, thank you for your info.</h4>
+    </div>
 </div>
 </body>
 </html>
