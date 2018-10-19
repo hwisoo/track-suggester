@@ -28,6 +28,10 @@ input#name {
     max-width: 250px;
 }
 
+.row {
+    margin-top: 20px;
+}
+
 .label {
     font-weight: bold;
     color: #00b3b4;
