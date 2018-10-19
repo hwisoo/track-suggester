@@ -24,13 +24,26 @@ $(document).ready(function(){
             suggest1 = "Ruby/Rails"
         }
 
-        if(build === "")
+        if(build === "internal" && company != "bigger"){
+            suggest2 = "C#/.NET"
+        } else if(build === "dynamic" && company != "fast-paced"){
+            suggest2 = "PHP/Drupal"
+        } else if (build === "android" && company != "enterprise"){
+            suggest2 = "Java/Android"
+        } else if (build === "interactive" && company != "start-up"){
+            suggest2 = "Ruby/Rails"
+        } else {
+            suggest2 = "CSS/Design"
+        }
+
+
         
-        console.log(company);
+        console.log(build);
 
         $("div#output").hide();
         $("span#nameOutput").text(name);
         $("span#suggest1").text(suggest1);
+        $("span#suggest2").text(suggest2);
         $("div#output").fadeIn(2000);
         
     })
