@@ -6,7 +6,7 @@
 
 ## Description
 
-_ A simple web app, that provides suggestions based on user input_
+A simple web app, that provides suggestions based on user input
 
 ## Setup/Installation Requirements
 
