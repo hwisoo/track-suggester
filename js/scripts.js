@@ -10,6 +10,11 @@ $(document).ready(function(){
         var company = $("input:radio[name=company]:checked").val();
         var build = $("input:radio[name=build]:checked").val();
 
+        // get audio file
+        var clickSound = $("audio#clickSound")[0];
+        
+        // declare other global variables
+
         var suggest1;
         var suggest2;
         var suggest3;
@@ -75,6 +80,8 @@ $(document).ready(function(){
             suggest3 = "CSS/Design"
         }
 
+       clickSound.play();
+        
 
         $("div#output").hide();
         $("h4#message").hide();
@@ -89,5 +96,5 @@ $(document).ready(function(){
         $("h4#message").slideDown(500);
         $("div#output").fadeIn(2000);
         
-    })
-})
+    });
+});
