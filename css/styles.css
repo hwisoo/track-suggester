@@ -28,7 +28,7 @@ input#name {
     max-width: 250px;
 }
 
-#output {
+#message, #output {
     display:none;
 }
 

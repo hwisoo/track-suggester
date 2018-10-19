@@ -73,13 +73,16 @@ $(document).ready(function(){
 
 
         $("div#output").hide();
-        
+        $("h4#message").hide();
+
 
         $("span#suggest1").text(suggest1);
         $("span#suggest2").text(suggest2);
         $("span#suggest3").text(suggest3);
         $("span#campusOutput").text(campus);
         $("span#addressOutput").text(address);
+
+        $("h4#message").slideDown(500);
         $("div#output").fadeIn(2000);
         
     })
