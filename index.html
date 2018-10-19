@@ -36,6 +36,34 @@
             </div>
         </div>
         <div class="row">
+                <div class="form-group col col-md-3">
+                        <p>You would like to build: </p>
+                        
+                            <div class="radio">
+                            <label>
+                            <input type="radio" name="build" value="internal" checked>
+                                Internal business software
+                            </label>
+                            </div>
+                            <div class="radio">
+                            <label>
+                                <input type="radio" name="build" value="dynamic">
+                                Dynamic web apps, server-side
+                            </label>
+                            </div>
+                            <div class="radio">
+                            <label>
+                                <input type="radio" name="build" value="android">
+                                Android apps
+                            </label>
+                            </div>        
+                            <div class="radio">
+                            <label>
+                                <input type="radio" name="build" value="interactive">
+                                Interactive web apps
+                            </label>
+                            </div> 
+                        </div>
             <div class="form-group col col-md-3">
                 <p>You would like to work for: </p>
                 <div class="radio">
@@ -64,42 +92,16 @@
                 </div> 
             </div>
 
-            <div class="form-group col col-md-3">
-            <p>You would like to build: </p>
             
-                <div class="radio">
-                <label>
-                <input type="radio" name="build" value="internal" checked>
-                    Internal business software
-                </label>
-                </div>
-                <div class="radio">
-                <label>
-                    <input type="radio" name="build" value="dynamic">
-                    Dynamic web apps, server-side
-                </label>
-                </div>
-                <div class="radio">
-                <label>
-                    <input type="radio" name="build" value="android">
-                    Android apps
-                </label>
-                </div>        
-                <div class="radio">
-                <label>
-                    <input type="radio" name="build" value="interactive">
-                    Interactive web apps
-                </label>
-                </div> 
-            </div>
         </div>
         <button type="submit" class="btn btn-dark">Submit</button>
     </form>
 
     <div id="output">
-        <h4><span id="nameOutput"></span>, thank you for your info.</h4>
+        <h4><span id="nameOutput"></span>thank you for your info.</h4>
         <h5>Our first suggestion is the:  <span id="suggest1"></span> track.</h5>
         <h5>Our second suggestion is the:  <span id="suggest2"></span> track.</h5>
+        <h5>Our third suggestion is the:  <span id="suggest3"></span> track.</h5>
     </div>
 </div>
 </body>
