@@ -1,8 +1,11 @@
+
+
 img {
     margin-right: 30px;
 }
 
 h1 {
+    text-shadow: 2px 2px 8px darkgray;
     margin-bottom: 50px;
 }
 
@@ -14,10 +17,15 @@ form {
     margin-bottom: 30px;
 }
 
+button.btn {
+    color: #fff;
+    background-color: #00b3b4;
+}
+
 #output {
     display:none;
 }
 
-#nameOutput, .color, #suggest1, #suggest2, #suggest3, #campusOutput, #addressOutput {
+h1, #nameOutput, .color, #suggest1, #suggest2, #suggest3, #campusOutput, #addressOutput {
     color: #00b3b4;
 }
