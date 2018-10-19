@@ -59,16 +59,16 @@ $(document).ready(function(){
             suggest3 = "Ruby/Rails"
         }
 
-        if (side ==="back" && suggest2 != "CSS/Design") {
-            suggest3 = "CSS/Design"
-        } else if (side === "back" && suggest2 === "CSS/Design" && suggest1 != "C#/.NET") {
+        if  (side === "back" &&  suggest1 != "C#/.NET" && suggest2 !="C#/.NET") {
             suggest3 = "C#/.NET"
-        } else if (side === "back" && suggest2 === "CSS/Design" && suggest1 != "PHP/Drupal") {
+        } else if (side === "back" && suggest1!= "PHP/Drupal" && suggestion2 != "PHP/Drupal") {
             suggest3 = "PHP/Drupal"
-        } else if (side === "back" && suggest2 === "CSS/Design" && suggest1 != "Java/Android") {
+        } else if (side === "back" && suggest1 != "Java/Android" && suggest2 != "Java/Android") {
             suggest3 = "Java/Android"
-        } else if (side === "back" && suggest2 === "CSS/Design" && suggest1 != "Ruby/Rails") {
+        } else if (side === "back" && suggest1 != "Ruby/Rails" && suggest2 != "Ruby/Rails") {
             suggest3 = "Ruby/Rails"
+        } else if( side ==="back" && suggest1 != "CSS/Design" && suggest2 != "CSS/Design") {
+            suggest3 = "CSS/Design"
         }
 
 
