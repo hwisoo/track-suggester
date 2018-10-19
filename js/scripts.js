@@ -9,10 +9,21 @@ $(document).ready(function(){
         var side = $("select#side").val();
         var company = $("input:radio[name=company]:checked").val();
         var build = $("input:radio[name=build]:checked").val();
-        
+
         var suggest1;
         var suggest2;
         var suggest3;
+        var address;
+        
+        if (name) {
+            $("span#nameOutput").text(name + ", ");
+            }
+
+        if (campus === "Seattle") {
+            address = "600 1st Ave, Seattle, WA "
+        } else if (campus === "Portland") {
+            address = "400 SW 6th Ave, Portland, OR "
+        }
 
         if(build === "internal"){
             suggest1 = "C#/.NET"
@@ -60,15 +71,15 @@ $(document).ready(function(){
             suggest3 = "Ruby/Rails"
         }
 
-            console.log(build);
 
         $("div#output").hide();
-        if (name) {
-        $("span#nameOutput").text(name + ", ");
-        }
+        
+
         $("span#suggest1").text(suggest1);
         $("span#suggest2").text(suggest2);
         $("span#suggest3").text(suggest3);
+        $("span#campusOutput").text(campus);
+        $("span#addressOutput").text(address);
         $("div#output").fadeIn(2000);
         
     })

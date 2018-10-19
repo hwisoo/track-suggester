@@ -18,6 +18,6 @@ form {
     display:none;
 }
 
-#nameOutput, #suggest1, #suggest2, #suggest3 {
+#nameOutput, .color, #suggest1, #suggest2, #suggest3, #campusOutput, #addressOutput {
     color: #00b3b4;
 }
