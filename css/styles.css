@@ -5,6 +5,8 @@ img {
 }
 
 h1 {
+    padding-top: 20px;
+    font-family:"Helvetica Neue",Arial,sans-serif;
     text-shadow: 2px 2px 8px darkgray;
     margin-bottom: 50px;
 }
@@ -20,6 +22,10 @@ form {
 button.btn {
     color: #fff;
     background-color: #00b3b4;
+}
+
+input#name {
+    max-width: 250px;
 }
 
 #output {
